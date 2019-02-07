@@ -2,11 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>HTML Academy: Нёрдс-каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
@@ -112,10 +115,14 @@
           </ul>
           <ul class="sorting-direction">
             <li>
-              <a class="sorting-direction-down sorting-current"><span class="visually-hidden">По убыванию </span></a>
+              <a class="sorting-direction-down sorting-current">
+                <span class="visually-hidden">По убыванию </span>
+              </a>
             </li>
             <li>
-              <a class="sorting-direction-up" href="#"><span class="visually-hidden">По возрастанию </span></a>
+              <a class="sorting-direction-up" href="#">
+                <span class="visually-hidden">По возрастанию </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -200,13 +207,13 @@
             <a>1</a>
           </li>
           <li>
-            <a href="">2</a>
+            <a href="#">2</a>
           </li>
           <li>
-            <a href="">3</a>
+            <a href="#">3</a>
           </li>
           <li class="products-pagination-next">
-            <a href="">Следующая</a>
+            <a href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -215,7 +222,7 @@
     <footer class="main-footer">
       <div class="footer-contacts-wrapper">
         <p class="map">
-          <img src="img/map+marker.jpg" width="1440" height="416" alt="Часть карты с офисом дизайн-студии по адресу г. Санкт-Петербург,, ул. Б. Конюшенная, д. 19/8">
+          <img src="img/map+marker.jpg" width="1440" height="416" alt="Часть карты с офисом дизайн-студии по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </p>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
@@ -249,7 +256,7 @@
 
     <section class="modal-feedback">
       <h2 class="feedback-title">Напишите нам</h2>
-      <form  class="feedback-form" action="https://echo.htmlacademy.ru"method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-form-field">
           <label for="name">Ваше имя:</label>
           <input id="name" type="text" name="name" placeholder="Имя Фамилия">
@@ -260,7 +267,7 @@
         </p>
         <p class="feedback-form-field">
           <label for="message">Текст письма:</label>
-          <textarea id="message" placeholder="В свободной форме"></textarea>
+          <textarea id="message" name="message" placeholder="В свободной форме" ></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
