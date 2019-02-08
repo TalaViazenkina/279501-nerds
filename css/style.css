@@ -435,28 +435,28 @@ img {
 .about-us-wrapper:last-child p {
   padding-left: 20px;
 }
-
 .about-us-facts {
-  border-collapse: collapse;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.about-us-facts tbody {
+.fact-item {
   display: flex;
-}
-
-.about-us-facts tr {
-  display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
   align-items: flex-start;
   width: 110px;
   padding: 0 5px;
 }
 
-.about-us-facts td:first-child {
+.fact-item span:first-child {
+  order: 1;
   line-height: 18px;
 }
 
-.about-us-facts td:nth-child(2) {
+.fact-item span:last-child {
   padding-bottom: 25px;
 
   font-weight: 700;
@@ -465,7 +465,7 @@ img {
   color: #000000;
 }
 
-.about-us-facts sup {
+.fact-item sup {
   position: relative;
   top: -10px;
 }
