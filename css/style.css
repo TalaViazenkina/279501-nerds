@@ -615,3 +615,167 @@ img {
   color: #000000;
   margin-bottom: 3px;
 }
+
+/* Форма обратной связи  */
+
+.modal-feedback {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 760px;
+  padding: 65px 100px 75px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-show {
+  display: block;
+}
+
+.feedback-title {
+
+  margin: 0 0 35px 0;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.feedback-form-field {
+  width: 360px;
+  margin: 0 0 35px 0;
+}
+
+.feedback-form-field:last-of-type {
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.feedback-form input {
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+  color: #444444;
+  padding: 14px 12px;
+  height: 50px;
+  border-radius: 3px;
+  border: 2px solid #d7dcde;
+}
+
+.feedback-form input:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback-form input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.feedback-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+  color: #444444;
+  padding: 14px 12px;
+  height: 118px;
+  border-radius: 3px;
+  border: 2px solid #d7dcde;
+}
+
+.feedback-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.feedback-form input:invalid,
+.feedback-field-invalid {
+  color: #e74246;
+  border-color: #e74246;
+}
+
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form .button {
+  padding: 15px 85px 17px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 58px;
+  right: 78px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  position: absolute;
+  top: 11px;
+  left: 21px;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 27px;
+  background-color: #fecccd;
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(315deg);
+}
+
+.modal-close:hover::before,
+.modal-close:focus::before,
+.modal-close:hover::after,
+.modal-close:focus::after {
+  background-color: #fb565a;
+  outline: none;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ffeeee;
+
+}
+
+
