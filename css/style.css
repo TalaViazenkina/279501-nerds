@@ -1020,7 +1020,6 @@ img {
   padding-left: 60px;
 }
 
-
 /* Пагинация */
 
 .products-pagination {
@@ -1123,7 +1122,7 @@ img {
   margin-bottom: 35px;
 }
 
-.feedback-button {
+.feedback-open-button {
   padding: 17px 45px 15px;
 }
 
@@ -1195,22 +1194,58 @@ img {
 
 /* Форма обратной связи  */
 
+@keyframes jump {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(20px);
+  }
+
+  50%  {
+    transform: translateX(-20px);
+  }
+}
+
 .modal-feedback {
   position: fixed;
-  top: 50%;
+  top: 120px;
   left: 50%;
 
   display: none;
   width: 760px;
+  margin-left: -480px;
   padding: 65px 100px 75px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .modal-show {
   display: block;
+
+  animation: jump 1s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-title {
@@ -1295,7 +1330,7 @@ img {
 }
 
 .feedback-form input:invalid,
-.feedback-field-invalid {
+.feedback-form .feedback-field-invalid {
   color: #e74246;
 
   border-color: #e74246;
