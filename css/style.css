@@ -50,12 +50,13 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 50px;
 }
 
 .logo {
   flex-shrink: 0;
+  margin-right: 40px;
 
   line-height: 0;
 }
@@ -72,7 +73,8 @@ img {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  justify-content: center;
+  margin: 25px 0 0;
   padding: 0;
 
   list-style: none;
@@ -117,6 +119,7 @@ img {
 }
 
 .header-basket {
+  margin-top: 25px;
   padding-bottom: 5px;
   padding-left: 40px;
 
@@ -290,7 +293,7 @@ img {
 }
 
 .services {
-  padding: 80px 0;
+  padding: 80px 0 30px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -308,6 +311,7 @@ img {
 .service-item {
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 50px;
   padding-top: 170px;
 
   background-image: url("../img/services1.png");
@@ -774,7 +778,7 @@ img {
 /* Сортировка */
 
 .products {
-  width: 800px;
+  width: 760px;
 }
 
 .products-sorting {
@@ -782,12 +786,11 @@ img {
   justify-content: flex-end;
   align-items: baseline;
   margin-bottom: 55px;
-  padding-left: 40px;
 }
 
 
 .products-sorting h3 {
-  margin: 0;
+  margin: 0 30px 0 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -798,6 +801,7 @@ img {
 
 .sorting-type {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 10px 0 auto;
   padding: 0;
 
@@ -898,7 +902,7 @@ img {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0 0 27px;
   padding: 0;
 
@@ -910,7 +914,6 @@ img {
 
   width: 360px;
   margin-bottom: 33px;
-  margin-left: 40px;
   padding-top: 40px;
 
   background-color: #e9e9e9;
@@ -1004,7 +1007,9 @@ img {
 }
 
 .product-item-description {
+  max-height: 387px;
   margin: 0 0 30px 0;
+  overflow: auto;
 
   line-height: 18px;
   color: #666666;
@@ -1022,7 +1027,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 0 60px 40px;
+  margin: 0 0 60px;
   padding: 0;
 
   list-style: none;
