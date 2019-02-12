@@ -1082,6 +1082,15 @@ img {
   position: relative;
 }
 
+.footer-contacts-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+}
+
+
 .footer-map {
   margin: 0;
 

@@ -11,14 +11,14 @@ var sliders = document.querySelectorAll(".slider-item");
 
 //Открытие модального окна
 modalLink.addEventListener("click", function (evt) {
-  evt.preventDefault;
+  evt.preventDefault();
   popup.classList.add("modal-show");
   fieldName.focus();
 });
 
 //Закрытие по клику
 modalClose.addEventListener("click", function (evt) {
-  evt.preventDefault;
+  evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
   fieldEmail.classList.remove("feedback-field-invalid");
@@ -28,7 +28,7 @@ modalClose.addEventListener("click", function (evt) {
 //Закрытие по ESC
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27 && popup.classList.contains("modal-show")) {
-    evt.preventDefault;
+    evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
     fieldEmail.classList.remove("feedback-field-invalid");
