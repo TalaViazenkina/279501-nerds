@@ -276,7 +276,6 @@ img {
   margin: 0 0 38px;
 }
 
-
 .button {
   display: inline-block;
   padding: 17px 40px 15px;
@@ -860,7 +859,6 @@ img {
   margin-bottom: 55px;
 }
 
-
 .products-sorting h3 {
   margin: 0 30px 0 0;
 
@@ -974,9 +972,6 @@ img {
 .sorting-direction .sorting-current:active::after {
   border-bottom-color: #231f20;
 }
-
-
-
 
 /* Шаблоны - каталог */
 
@@ -1198,7 +1193,6 @@ img {
 
   border: none;
 }
-
 
 .footer-map {
   margin: 0;
