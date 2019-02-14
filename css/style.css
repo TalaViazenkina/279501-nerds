@@ -97,7 +97,7 @@ img {
 }
 
 .site-navigation a {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 
   font-weight: 500;
   line-height: 30px;
@@ -585,7 +585,7 @@ img {
 
 .main-title {
   margin: 0;
-  padding: 75px 20px 100px;
+  padding: 77px 20px 108px;
 
   font-weight: 500;
   font-size: 55px;
@@ -603,7 +603,7 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 55px;
 }
 
 /* Фильтры */
@@ -614,7 +614,7 @@ img {
 }
 
 .filters-price h3 {
-  margin: 0 0 45px;
+  margin: 0 0 47px;
 
   font-weight: 700;
   font-size: 18px;
@@ -687,7 +687,7 @@ img {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  margin: 0 0 53px;
+  margin: 0 0 55px;
 
   line-height: 22px;
   text-transform: uppercase;
@@ -718,14 +718,18 @@ img {
 
 
 .filters-form fieldset {
-  margin: 0 0 40px;
+  margin: 0 0 42px;
   padding: 0;
 
   border: none;
 }
 
+.filters-form fieldset:last-of-type {
+  margin-bottom: 45px;
+}
+
 .filters-form legend {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   font-weight: 700;
   font-size: 18px;
@@ -742,7 +746,7 @@ img {
 }
 
 .filters-layout li {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .filters-layout li:last-child {
@@ -760,7 +764,7 @@ img {
 .filters-layout label::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 5px;
 
   width: 9px;
@@ -795,7 +799,7 @@ img {
 }
 
 .filters-features li {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .filters-features li:last-child {
@@ -814,7 +818,7 @@ img {
   content: "";
   position: absolute;
   top: -2px;
-  left: 5px;
+  left: 3px;
 
   width: 19px;
   height: 19px;
@@ -878,7 +882,7 @@ img {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 
 .products-sorting h3 {
@@ -897,7 +901,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 10px 0 auto;
+  margin: 0 5px 0 auto;
   padding: 0;
 
   list-style: none;
@@ -1088,7 +1092,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 25px 65px 43px;
+  padding: 26px 65px 43px;
 
   text-align: center;
 
@@ -1100,7 +1104,7 @@ img {
 }
 
 .product-item-title {
-  margin: 0 0 12px;
+  margin: 0 0 15px;
 
   font-weight: 700;
   font-size: 18px;
@@ -1133,8 +1137,8 @@ img {
 }
 
 .product-item-button {
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 59px;
+  padding-left: 61px;
 }
 
 /* Пагинация */
@@ -1177,7 +1181,7 @@ img {
 
 .products-pagination-next a {
   padding-right: 78px;
-  padding-left: 78px;
+  padding-left: 75px;
 }
 
 .products-pagination a:hover,
