@@ -291,7 +291,6 @@ img {
 .button:hover,
 .button:focus {
   background-color: #e74246;
-  outline: none;
 }
 
 .button:active {
